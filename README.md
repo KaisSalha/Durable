@@ -21,7 +21,7 @@ A beautiful static blog using Next.js with markdown support.
    ```markdown
    ---
    title: "Your Post Title"
-   date: "YYYY-MM-DD"
+   date: "2024-10-24"
    excerpt: "A brief description of your post"
    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
    ---

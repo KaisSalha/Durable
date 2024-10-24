@@ -1,6 +1,6 @@
 ---
 title: "At the forefront of React"
-date: "2024-03-23"
+date: "2024-10-20"
 excerpt: "Exploring the latest features and best practices in React development."
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
 ---

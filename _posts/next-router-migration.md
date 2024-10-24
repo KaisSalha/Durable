@@ -1,6 +1,6 @@
 ---
 title: "'next/router' to 'next/navigation' migration cheatsheet"
-date: "2024-03-24"
+date: "2024-10-22"
 excerpt: "Wrote down the sheet I wish I had."
 image: "https://images.unsplash.com/photo-1618335829737-2228915674e0?q=80&w=2070&auto=format&fit=crop"
 ---

@@ -12,7 +12,7 @@ export const Header = () => {
           href="/"
           className="text-foreground hover:text-primary/80 transition-colors"
         >
-          <Gem className="h-6 w-6" />
+          <Gem className="h-7 w-7 text-purple-600" strokeWidth={1.5} />
         </Link>
         <div className="flex items-center">
           <ThemeToggle />

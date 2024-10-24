@@ -23,7 +23,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <article className="flex-1">
-      <div className="mx-auto w-full max-w-2xl px-4 sm:px-6 py-8">
+      <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 py-8">
         <div className="space-y-4 text-center">
           <h1 className="text-4xl font-bold sm:text-5xl">{post.title}</h1>
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
@@ -38,7 +38,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       </div>
 
       <div className="relative w-full mt-6 mb-12">
-        <div className="mx-auto w-full max-w-2xl px-4 sm:px-6 relative">
+        <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 relative">
           <div className="relative -mx-8 aspect-[2/1] overflow-hidden rounded-2xl">
             <Image
               src={post.image}
@@ -51,7 +51,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-2xl px-4 sm:px-6">
+      <div className="mx-auto w-full max-w-3xl px-4 sm:px-6">
         <div className="prose prose-lg dark:prose-invert max-w-none">
           <Markdown>{post.content}</Markdown>
         </div>

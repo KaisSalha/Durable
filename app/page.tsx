@@ -62,7 +62,7 @@ export default function Home() {
             ALL POSTS
           </h2>
           <div className="grid gap-8 sm:grid-cols-2">
-            {remainingPosts.map((post) => (
+            {[...remainingPosts, featuredPost].map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`}>
                 <Card className="h-full overflow-hidden group">
                   <div className="relative aspect-[4/3] overflow-hidden">
