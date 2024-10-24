@@ -16,7 +16,7 @@ A beautiful static blog using Next.js with markdown support.
 
 ## Writing Posts
 
-1. Create a new `.md` file in the `_posts` directory
+1. Create a new `.md` file in the `_posts` directory, the filename will be used as the slug for the post
 2. Add the following frontmatter at the top of your markdown file:
    ```markdown
    ---
