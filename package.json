@@ -18,7 +18,9 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "date-fns": "^3.6.0",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",
