@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getAllPosts } from "@/utils/blog";
+import { getAllPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/date";
 
 export default function Home() {

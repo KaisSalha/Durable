@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kais take-home for Durable
+
+A beautiful static blog using Next.js with markdown support.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Writing Posts
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Create a new `.md` file in the `_posts` directory
+2. Add the following frontmatter at the top of your markdown file:
+   ```markdown
+   ---
+   title: "Your Post Title"
+   date: "YYYY-MM-DD"
+   excerpt: "A brief description of your post"
+   image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
+   ---
+   ```
+3. Write your post content in markdown below the frontmatter
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Build the static site:
+   ```bash
+   npm run build
+   ```
+2. The static site will be generated in the `out` directory
+3. You can preview the built site locally:
+   ```bash
+   npx serve out
+   ```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The static site can be deployed to any static hosting service like Netlify, Vercel, or GitHub Pages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `_posts/`: Markdown files for blog posts
+- `app/`: Next.js app directory
+- `components/`: UI components
+- `lib/`: Utility functions and blog helpers
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT

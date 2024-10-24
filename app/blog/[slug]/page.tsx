@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/utils/blog";
+import { getAllPosts, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 import { formatDate } from "@/lib/date";
 import Markdown from "markdown-to-jsx";
 import { notFound } from "next/navigation";
