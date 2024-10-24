@@ -23,7 +23,7 @@ A beautiful static blog using Next.js with markdown support.
    title: "Your Post Title"
    date: "2024-10-24"
    excerpt: "A brief description of your post"
-   image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
+   image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    ---
    ```
 3. Write your post content in markdown below the frontmatter
