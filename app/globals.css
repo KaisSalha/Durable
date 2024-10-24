@@ -71,7 +71,7 @@
 }
 
 .prose pre {
-  @apply bg-muted p-4 rounded-lg;
+  @apply bg-muted p-4 rounded-lg overflow-auto;
 }
 
 .prose pre code {
