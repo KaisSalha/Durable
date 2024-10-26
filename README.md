@@ -58,7 +58,6 @@ The project includes a comprehensive test suite using Vitest and Testing Library
 
 ### Coverage Goals
 
--   Maintain >80% coverage for critical paths
 -   All new features must include tests
 -   E2E tests for critical user flows
 
