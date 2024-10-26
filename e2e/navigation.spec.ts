@@ -13,13 +13,13 @@ test.describe("Navigation", () => {
 		// Navigate to a blog post
 		const firstPost = await page
 			.getByRole("link")
-			.filter({ hasText: /Advanced Caching Strategies/ })
+			.filter({ hasText: /Caching in Next.js 14/ })
 			.first();
 		await firstPost.click();
 
 		// Verify we're on the blog post page
 		await expect(page.getByRole("heading", { level: 1 })).toContainText(
-			"Advanced Caching Strategies"
+			"Caching in Next.js 14"
 		);
 
 		// Go back to home
