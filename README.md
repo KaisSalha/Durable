@@ -76,7 +76,21 @@ The project includes a comprehensive test suite using Vitest and Testing Library
 
 ## Deployment
 
-The static site can be deployed to any static hosting service like Netlify, Vercel, or GitHub Pages.
+This project is configured for deployment with Vercel:
+
+1. Push your changes to GitHub
+2. Vercel automatically deploys:
+    - Production deployments from the `master` branch
+    - Preview deployments for all Pull Requests
+    - Instant rollbacks if needed
+
+The Vercel GitHub integration provides:
+
+-   Automatic deployments
+-   Preview deployments for PRs
+-   Deploy comments on PRs
+-   Branch protection rules
+-   Deploy statuses in GitHub
 
 ## Project Structure
 
