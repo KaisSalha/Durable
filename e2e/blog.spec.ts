@@ -21,15 +21,15 @@ test.describe("Blog Features", () => {
 		// Click on the first blog post
 		const firstPost = await page
 			.getByRole("link")
-			.filter({ hasText: /Advanced Caching Strategies/ })
+			.filter({ hasText: /Caching in Next.js 14/ })
 			.first();
 		const postTitle = await firstPost.textContent();
 		await firstPost.click();
 
 		// Verify blog post content
 		await expect(page.getByRole("article")).toBeVisible();
-		await expect(page.getByRole("heading", { level: 1 })).toContainText(
-			postTitle || ""
+		await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+			"Caching in Next.js 14"
 		);
 
 		// Check for reading time and date
