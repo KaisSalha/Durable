@@ -63,6 +63,8 @@ The project includes a comprehensive test suite using Vitest and Testing Library
 
 ## Building for Production
 
+This project is configured for static exports, making it perfect for deployment on static hosting platforms.
+
 1. Build the static site:
     ```bash
     npm run build
@@ -73,15 +75,29 @@ The project includes a comprehensive test suite using Vitest and Testing Library
     npx serve out
     ```
 
+When deploying to Vercel, the platform will automatically:
+
+-   Run `npm run build` to generate the static export
+-   Optimize and serve the static files from the `out` directory
+-   Enable instant static page serving through their global edge network
+
 ## Deployment
 
-This project is configured for deployment with Vercel:
+This project is configured for static site generation using Next.js's `output: "export"` configuration.
 
-1. Push your changes to GitHub
-2. Vercel automatically deploys:
+When deploying to Vercel:
+
+1. Connect your GitHub repository to Vercel:
+
+    - Go to [Vercel](https://vercel.com)
+    - Import your repository
+    - Vercel will automatically detect Next.js settings
+
+2. Vercel automatically handles:
     - Production deployments from the `master` branch
     - Preview deployments for all Pull Requests
     - Instant rollbacks if needed
+    - Static file optimization and delivery through their global edge network
 
 The Vercel GitHub integration provides:
 
