@@ -60,3 +60,13 @@ jobs:
               with:
                   coverage-summary-path: coverage/coverage-summary.json
                   branches: master
+
+            - name: Build project
+              run: npm run build
+
+            - name: Upload build output
+              uses: actions/upload-artifact@v4
+              with:
+                  name: build-output
+                  path: out/
+                  retention-days: 1
