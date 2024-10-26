@@ -1,5 +1,8 @@
 # Kais take-home for Durable
 
+[![CI](https://github.com/KaisSalha/Durable/actions/workflows/ci.yml/badge.svg)](https://github.com/KaisSalha/Durable/actions/workflows/ci.yml)
+![Coverage](./badges/coverage-total.svg)
+
 A beautiful static blog using Next.js with markdown support.
 
 ## Getting Started
