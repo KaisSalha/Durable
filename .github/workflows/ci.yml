@@ -60,10 +60,3 @@ jobs:
               with:
                   coverage-summary-path: coverage/coverage-summary.json
                   branches: master
-
-            - name: Commit and push badges
-              if: github.ref == 'refs/heads/master'
-              run: |
-                  git add badges/
-                  git commit -m "Updating coverage badges"
-                  git push origin master
