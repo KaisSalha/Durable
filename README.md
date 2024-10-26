@@ -28,6 +28,37 @@ A beautiful static blog using Next.js with markdown support.
    ```
 3. Write your post content in markdown below the frontmatter
 
+## Testing
+
+The project includes a comprehensive test suite using Vitest and Testing Library:
+
+- **Unit Tests**: Test individual components and utilities
+
+  ```bash
+  npm run test          # Run tests
+  npm run test:watch    # Run tests in watch mode
+  npm run coverage      # Generate coverage report
+  ```
+
+- **E2E Tests**: Test full user flows with Playwright
+  ```bash
+  npm run test:e2e     # Run e2e tests
+  npm run test:e2e:ui  # Run e2e tests with UI
+  ```
+
+### Test Structure
+
+- `__tests__/components/`: Component tests
+- `__tests__/lib/`: Utility function tests
+- `__tests__/utils/`: Helper function tests
+- `e2e/`: End-to-end tests
+
+### Coverage Goals
+
+- Maintain >80% coverage for critical paths
+- All new features must include tests
+- E2E tests for critical user flows
+
 ## Building for Production
 
 1. Build the static site:
