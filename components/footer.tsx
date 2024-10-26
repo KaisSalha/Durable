@@ -35,6 +35,7 @@ export const Footer = () => {
               href={link.href}
               className="group flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
               target="_blank"
+              aria-label={`Visit my ${link.label} profile`}
             >
               <link.icon className="h-4 w-4" />
               <span>/{link.label}</span>

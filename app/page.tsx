@@ -28,7 +28,11 @@ export default function Home() {
             <h2 className="text-lg font-semibold mb-8 text-primary/80">
               FEATURED POST
             </h2>
-            <Link href={`/blog/${featuredPost.slug}`} className="group">
+            <Link
+              href={`/blog/${featuredPost.slug}`}
+              className="group"
+              aria-label={`Read more about ${featuredPost.title}`}
+            >
               <div className="grid gap-8 md:grid-cols-2">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                   <Image
@@ -63,7 +67,11 @@ export default function Home() {
           </h2>
           <div className="grid gap-8 sm:grid-cols-2">
             {[...remainingPosts, featuredPost].map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                aria-label={`Read more about ${post.title}`}
+              >
                 <Card className="h-full overflow-hidden group">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
