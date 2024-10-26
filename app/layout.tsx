@@ -8,35 +8,35 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Modern Web Development Blog",
-    template: "%s | Modern Web Development Blog",
-  },
-  description:
-    "Expert insights on React, Next.js, TypeScript, and modern web development practices",
+	title: {
+		default: "Modern Web Development Blog",
+		template: "%s | Modern Web Development Blog",
+	},
+	description:
+		"Expert insights on React, Next.js, TypeScript, and modern web development practices",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            {children}
-            <Footer />
-          </div>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang='en' suppressHydrationWarning>
+			<body className={inter.className}>
+				<ThemeProvider
+					attribute='class'
+					defaultTheme='dark'
+					enableSystem={false}
+					disableTransitionOnChange
+				>
+					<div className='min-h-screen flex flex-col'>
+						<Header />
+						{children}
+						<Footer />
+					</div>
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }

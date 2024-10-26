@@ -11,15 +11,15 @@ React continues to evolve with new features and patterns that make our lives as 
 
 Server Components represent a paradigm shift in how we think about React applications. They allow us to:
 
-- Reduce bundle size
-- Improve initial page load
-- Keep sensitive data on the server
+-   Reduce bundle size
+-   Improve initial page load
+-   Keep sensitive data on the server
 
 ```jsx
 // This component runs on the server
 async function UserProfile({ id }) {
-  const user = await db.user.findUnique({ id });
-  return <h1>{user.name}</h1>;
+	const user = await db.user.findUnique({ id });
+	return <h1>{user.name}</h1>;
 }
 ```
 
@@ -29,8 +29,8 @@ The new `use` hook is a game-changer for handling promises:
 
 ```jsx
 function Profile() {
-  const user = use(fetchUser());
-  return <h1>{user.name}</h1>;
+	const user = use(fetchUser());
+	return <h1>{user.name}</h1>;
 }
 ```
 

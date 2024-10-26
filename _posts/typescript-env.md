@@ -22,15 +22,15 @@ Create a schema for your environment variables:
 import { z } from "zod";
 
 const envSchema = z.object({
-  API_KEY: z.string(),
-  DATABASE_URL: z.string().url(),
-  PORT: z.string().transform(Number),
+	API_KEY: z.string(),
+	DATABASE_URL: z.string().url(),
+	PORT: z.string().transform(Number),
 });
 
 declare global {
-  namespace NodeJS {
-    interface ProcessEnv extends z.infer<typeof envSchema> {}
-  }
+	namespace NodeJS {
+		interface ProcessEnv extends z.infer<typeof envSchema> {}
+	}
 }
 ```
 
