@@ -14,7 +14,7 @@ const socialLinks = [
   },
   {
     label: "linkedin",
-    href: "https://www.linkedin.com/in/kaissalha/",
+    href: "https://linkedin.com/in/kaissalha",
     icon: Linkedin,
   },
   {
