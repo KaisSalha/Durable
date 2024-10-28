@@ -51,9 +51,7 @@ The project includes a comprehensive test suite using Vitest and Testing Library
 
 ### Test Structure
 
--   `__tests__/components/`: Component tests
--   `__tests__/lib/`: Utility function tests
--   `__tests__/utils/`: Helper function tests
+-   `__tests__/`: Unit tests
 -   `e2e/`: End-to-end tests
 
 ### Coverage Goals
