@@ -15,7 +15,7 @@ export default function Home() {
 				<div className='mb-16 md:mb-24'>
 					<h1 className='text-4xl font-bold mb-6 md:text-6xl lg:text-7xl'>
 						Insights on Modern
-						<span className='block text-primary/80'>
+						<span className='block text-purple-500 dark:text-purple-400'>
 							Web Development
 						</span>
 					</h1>
